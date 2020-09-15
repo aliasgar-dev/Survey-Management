@@ -1,0 +1,27 @@
+<div class="main-container" id="" >
+   
+    <div>
+        {{# isloggedin}}
+            <a href="/logout"> <button type="btn" class="logoutClss pull-right" title="logout"></button></a>
+        {{/isloggedin}}
+    </div>
+
+    <span class="">
+      <a href="/home">Go To Take Survey Page</a>
+    </span>
+    <div id="totalRewardHldr" class="totalRewardHldrCls">
+      <span>Total Earned Amount</span>
+      <span>₹</span>
+      <span id="totalReward" class="totalRewardCls">0</span>
+    </div>
+     <table class="table" style="margin-top: 20px;">
+        <thead>
+            <tr>
+              	<th scope="col">Completed Surveys</th>
+              	<th scope="col">Earned Reward Amount</th>
+            </tr>
+        </thead>
+        <tbody id="allRewardHolder">
+      </tbody>
+    </table>
+</div>

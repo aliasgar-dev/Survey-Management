@@ -1,0 +1,47 @@
+<div class="main-container" id="homeUI" >
+   
+    <div>
+        {{# isloggedin}}
+            <a href="/logout"> <button type="btn" class="logoutClss pull-right" title="logout"></button></a>
+        {{/isloggedin}}
+    </div>
+    <div class="takeSurveyCls">Take Survey</div>
+    <div class="checkWalletCls">
+    	<a href="/reward">Go To Rewards Page</a>
+    </div>
+     <table class="table" style="margin-top: 20px;">
+        <thead>
+            <tr>
+              	<th scope="col">Survey Name</th>
+              	<th scope="col">Reward Amount</th>
+              	<!-- <th scope="col">Policy Start Date</th>
+              	<th scope="col">Policy End Date</th>
+              	<th scope="col">Category Name</th>
+              	<th scope="col">Company Name</th> -->
+            </tr>
+        </thead>
+        <tbody id="allSurveyHolder">
+      </tbody>
+    </table>
+    <!-- <ul id="" style="list-style: none;"></ul> -->
+    <div id="oneSurveyModal" class="modal fade " role="dialog">
+  		<div class="modal-dialog">
+		    <div class="modal-content newSurveyModalCls">
+		      	<div class="modal-header">
+		        	<h4 class="modal-title">New Survey Form</h4>
+		      	</div>
+		      	<div class="modal-body newSurveyClass">
+		        	<form id="oneSurveyForm" class="newSurveyFormCls">
+		        		<p id="surveyName"></p>
+						<div id="oneSurveyFormHolder"></div>
+					</form>
+		      	</div>
+		      	<div class="modal-footer">
+		        	<span id="closeAddSurveyModal" class="btn-danger scheduleFormSaveCls">Close</span>
+                    <span id="completeSurey" class="btn-info scheduleFormSaveCls">Complete Survey</span>
+		      	</div>
+		    </div>
+  		</div>
+	</div>
+    
+</div>
